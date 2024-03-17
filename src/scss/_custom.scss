@@ -34,33 +34,29 @@
     display: inline-block;
     width: 250px;
     height: 250px;
-    border: 5px solid #fff;
+    outline: 4px solid #fff;
+    outline-offset: -4px;
+    border: none;
     cursor: pointer;
     position: relative;
     background-size: cover;
     background-position: center;
 }
-  
-.image-label input[type="checkbox"] {
-    display: none;
-}
-  
-.image-label input[type="checkbox"]:checked + i {
-    border-color: #b51a00 !important;
-}
-  
+
 .image-checkbox {
-    max-width: 250px;
-    max-height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    border: none;
+    opacity: 0;
     cursor: pointer;
 }
-  
-.image-label.checked {
-    border-color: #b51a00 !important;
-}
+
+.image-label:has(input.image-checkbox:checked) {
+    outline: 4px solid #b51a00;
+    outline-offset: -4px;
+  }
   
 .fa-solid.fa-expand {
     color: #fff;

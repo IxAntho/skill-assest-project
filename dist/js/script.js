@@ -32,18 +32,18 @@ for (let i = 0; i < 5; i++) {
       const imgUrl = urls[index].link;
       label.style.backgroundImage = `url(${imgUrl})`;
 
-      // Add click event listener to the label
-      label.addEventListener("click", function () {
-        const checkbox = this.querySelector(".image-checkbox");
-        this.classList.toggle("checked");
-        checkbox.checked = !checkbox.checked;
-      });
+      //   // Add click event listener to the label
+      //   label.addEventListener("click", function () {
+      //     const checkbox = this.querySelector(".image-checkbox");
+      //     this.classList.toggle("checked");
+      //     checkbox.checked = !checkbox.checked;
+      //   });
 
-      // Add click event listener to the checkbox
-      const checkbox = label.querySelector(".image-checkbox");
-      checkbox.addEventListener("click", function (event) {
-        event.stopPropagation();
-      });
+      //   // Add click event listener to the checkbox
+      //   const checkbox = label.querySelector(".image-checkbox");
+      //   checkbox.addEventListener("click", function (event) {
+      //     event.stopPropagation();
+      //   });
     }
   });
 

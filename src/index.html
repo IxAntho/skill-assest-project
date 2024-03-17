@@ -4,17 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gabriel Sanchez Skill Assestment</title>
+    <meta name="author" content="Gabriel Sanchez" />
     <link rel="stylesheet" href="../dist/css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/48f87bed0a.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
-    <div class="container-lg themed-container text-center">
-      <div class="row mb-3 text-center">
-        <div class="col-4 themed-grid-col">.col-4</div>
-        <div class="col-4 themed-grid-col">.col-4</div>
-        <div class="col-4 themed-grid-col">.col-4</div>
+  <body class="page">
+    <template id="rowTemplate">
+      <div class="row mb-4 text-center">
+        <div class="col-md-3 themed-grid-col">
+          <label class="image-label">
+            <input type="checkbox" class="image-checkbox" />
+            <i class="fa-solid fa-expand"></i>
+          </label>
+        </div>
+        <div class="col-md-3 themed-grid-col">
+          <label class="image-label">
+            <input type="checkbox" class="image-checkbox" />
+            <i class="fa-solid fa-expand"></i>
+          </label>
+        </div>
+        <div class="col-md-3 themed-grid-col">
+          <label class="image-label">
+            <input type="checkbox" class="image-checkbox" />
+            <i class="fa-solid fa-expand"></i>
+          </label>
+        </div>
+        <div class="col-md-3 themed-grid-col">
+          <label class="image-label">
+            <input type="checkbox" class="image-checkbox" />
+            <i class="fa-solid fa-expand"></i>
+          </label>
+        </div>
       </div>
-    </div>
-
+    </template>
+    <div class="container-lg themed-container text-center"></div>
+    <section class="image-view">
+      <div class="image-view__container">
+        <button class="image-view__close-button"></button>
+        <img class="image-view__image" />
+      </div>
+    </section>
     <script src="./js/script.js"></script>
   </body>
 </html>

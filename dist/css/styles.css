@@ -6956,6 +6956,7 @@ progress {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  row-gap: 20px;
   padding-top: 30px;
 }
 
@@ -6966,6 +6967,7 @@ progress {
   align-items: center;
   gap: 20px;
   width: 100%;
+  margin-bottom: 0 !important;
 }
 
 .col-md-3.themed-grid-col {
@@ -6990,6 +6992,10 @@ progress {
   position: relative;
   background-size: cover;
   background-position: center;
+}
+.image-label:focus {
+  outline: 4px solid #b51a00;
+  outline-offset: -4px;
 }
 
 .image-checkbox {
@@ -7017,6 +7023,10 @@ progress {
   transform: scale(1.1);
   color: #b51a00;
   cursor: pointer;
+}
+.fa-solid.fa-expand:focus {
+  transform: scale(1.1);
+  color: #b51a00;
 }
 
 .image-view {
